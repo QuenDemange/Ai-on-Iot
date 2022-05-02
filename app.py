@@ -10,7 +10,6 @@ st.set_page_config(page_title="Traffic sign prediction", page_icon="⛔", layout
 
 label_csv = pd.read_csv('./labels.csv', sep=',')
 labels = {row[1]['ClassId']:row[1]['Name'] for row in label_csv.iterrows()}
-print(labels)
 
 def main():
     # title
